@@ -1,0 +1,135 @@
+.filterBox{
+    width: 1200px;
+    margin: 20px auto;
+    border: 5px solid #0077b6;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.filterBox>.content{
+    display: flex;
+    margin-bottom: 15px;
+
+}
+.filterBox>.content>p{
+    width: 120px;
+    font-size: 20px;
+    text-align: center;
+
+}
+.filterBox>.content>ul{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+.filterBox>.content>ul>li{
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.filterBox>.content>ul>li:hover,
+.filterBox>.content>ul>li.active{
+    background-color: #90e0ef;
+}
+.filterBox>.content>input{
+    font-size: 20px;
+    height: 30px;
+    padding-left: 20px;
+}
+.filterBox>.content>span{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.filterBox>.content>span.left,
+.filterBox>.content>span.right{
+    background-color:#0077b6;
+    color: #fff;
+}
+.filterBox>.content>span.disable{
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.filterBox>.content>select{
+    margin-left: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.filterBox>.content>.page{
+    width: 50px;
+    text-align: center;
+    padding-left: 0;
+    margin: 0 20px;
+}
+.filterBox>.content>button{
+    font-size: 20px;
+    padding: 0 5px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #0077b6;
+    border-radius: 18px;
+    background-color: #0077b6;
+}
+.list{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.list>li{
+    width: 280px;
+    border: 5px solid #0077b6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.list>li>.show{
+    width: 270px;
+    height: 270px;
+    position: relative;
+    cursor: pointer;
+}
+.list>li>.show>div{
+    padding: 5px 10px;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+}
+.list>li>.show>div.sale{
+    background: orange;
+    right: 60px;
+}
+.list>li>.info{
+    box-sizing: border-box;
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.list>li>.info>.title{
+    overflow: hidden;
+    height: 20px;
+}
+.list>li>.info>p.price{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.list>li>.info>p.price>.current{
+    color: red;
+}
+.list>li>.info>p.price>.old{
+    color: #ccc;
+    font-size: 14px;
+}
+.list>li>.info>button{
+    padding: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,51 @@
+form{
+    width: 600px;
+    padding: 20px;
+    border: 5px solid #0077b6;
+    border-radius: 10px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    position: relative;
+}
+form>label{
+    height: 50px;
+    font-size: 30px;
+    text-align: right;
+}
+form>label>select{
+    display: inline-block;
+    width: 100px;
+    margin-right: 325px;
+}
+form>label>input{
+    display: inline-block;
+    width: 300px;
+    margin-right: 100px;
+    padding-left: 20px;
+    font-size: 30px;
+    height: 40px;
+}
+form>p{
+    text-align: right;
+}
+form>button{
+    padding: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+form>span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 5px;
+    font-size: 20px;
+    color: red;
+    display: none;
+}
+form>label>select{
+    padding-left: 20px;
+    padding: 5px;
+    font-size: 20px;
+}
